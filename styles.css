@@ -117,7 +117,7 @@ h1 {
   box-shadow: var(--shadow);
 }
 
-.video-card-large {
+.featured-card {
   display: block;
 }
 
@@ -215,7 +215,7 @@ h1 {
   padding: 12px 14px 14px;
 }
 
-.video-card-large .video-copy {
+.featured-card .video-copy {
   min-height: 0;
   padding: 14px 16px 16px;
   border-top: 1px solid var(--line);
@@ -229,7 +229,7 @@ h1 {
   letter-spacing: 0;
 }
 
-.video-card-large .video-copy h3 {
+.featured-card .video-copy h3 {
   font-size: 1rem;
 }
 
@@ -272,7 +272,7 @@ h1 {
     grid-template-columns: 1fr;
   }
 
-  .video-card-large .video-copy {
+  .featured-card .video-copy {
     padding: 13px 14px 15px;
   }
 
