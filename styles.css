@@ -241,6 +241,8 @@ h1 {
 
 .compact-section {
   max-width: 880px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .compact-section .video-frame {
