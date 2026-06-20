@@ -1,5 +1,5 @@
-# UNIQ Video Supplement
+# UNIQ Demonstrations
 
-Anonymous UNIQ video page for double-blind review.
+Anonymous video page for double-blind review.
 
 The site is static and intended for GitHub Pages.
