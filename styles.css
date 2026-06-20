@@ -118,9 +118,7 @@ h1 {
 }
 
 .video-card-large {
-  display: grid;
-  grid-template-columns: minmax(0, 2.35fr) minmax(220px, 0.65fr);
-  align-items: stretch;
+  display: block;
 }
 
 .video-frame {
@@ -218,11 +216,9 @@ h1 {
 }
 
 .video-card-large .video-copy {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100%;
-  padding: 22px;
+  min-height: 0;
+  padding: 14px 16px 16px;
+  border-top: 1px solid var(--line);
   background: var(--surface-soft);
 }
 
@@ -234,7 +230,7 @@ h1 {
 }
 
 .video-card-large .video-copy h3 {
-  font-size: clamp(1.1rem, 1.8vw, 1.45rem);
+  font-size: 1rem;
 }
 
 .video-copy p {
@@ -272,13 +268,12 @@ h1 {
     gap: 2px;
   }
 
-  .two-up,
-  .video-card-large {
+  .two-up {
     grid-template-columns: 1fr;
   }
 
   .video-card-large .video-copy {
-    padding: 16px;
+    padding: 13px 14px 15px;
   }
 
   .compact-section {
