@@ -9,7 +9,7 @@
       content="UNIQ method video demonstrations for mixed equality and inequality constraint handling in robot learning."
     >
     <link rel="icon" href="data:,">
-    <link rel="stylesheet" href="styles.css?v=20260621-method-site">
+    <link rel="stylesheet" href="styles.css?v=20260621-nominal-policy">
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -82,6 +82,11 @@
           <p class="kicker">Simulation comparison</p>
           <h2 id="moving-obstacle-title">Moving-Obstacle Navigation</h2>
         </div>
+        <p class="section-note">
+          Nominal policy: the same SAC-trained navigation actor proposes a
+          normalized planar velocity; ATACOM and UNIQ differ only in the online
+          correction applied after the actor output.
+        </p>
         <div class="video-grid two-up">
           <article class="video-card">
             <div class="video-frame">
@@ -134,6 +139,11 @@
           <p class="kicker">Simulation demonstrations</p>
           <h2 id="additional-title">Curve Tracking and Planar Air Hockey</h2>
         </div>
+        <p class="section-note">
+          Curve tracking uses a curve-trained actor with an equality-tracking
+          constraint and obstacle inequalities. Planar air hockey uses a learned
+          striking actor with joint, velocity, and workspace constraints.
+        </p>
         <div class="video-grid two-up">
           <article class="video-card">
             <div class="video-frame">
@@ -186,6 +196,12 @@
           <p class="kicker">Physical robot experiment</p>
           <h2 id="tb4-title">TurtleBot 4 Static-Obstacle Navigation</h2>
         </div>
+        <p class="section-note">
+          Nominal policy: a designed range-bearing goal controller in the
+          odometry frame. The reported comparison uses 10 matched static-obstacle
+          rollouts per method; the videos show representative ATACOM and UNIQ
+          rollouts from this setup.
+        </p>
         <div class="video-grid two-up">
           <article class="video-card">
             <div class="video-frame">
@@ -239,9 +255,11 @@
           <h2 id="xarm-title">xArm7 From-Scratch Reaching</h2>
         </div>
         <p class="section-note">
-          Each pair shows a direct hardware reaching run and a simulation replay
-          of the same recorded trajectory. The replay visualizes the safe region
-          and target point; the hardware run is the physical experiment.
+          Nominal policy: a TQC reaching policy trained from scratch through the
+          xArm7 hardware interface under UNIQ-filtered exploration. The study
+          uses three independent hardware training runs; each pair below shows a
+          hardware trajectory and a replay of the same recorded trajectory with
+          the safe region and target point visualized.
         </p>
         <div class="video-grid two-up">
           <article class="video-card">
@@ -383,6 +401,11 @@
           <p class="kicker">Physical robot experiment</p>
           <h2 id="g1-title">Unitree G1 Policy Wrapping</h2>
         </div>
+        <p class="section-note">
+          Nominal policy: one fixed pretrained RoboJuDo walking policy. UNIQ
+          filters the lower-body joint-position targets online while posture
+          constraints are monitored.
+        </p>
         <div class="video-grid single-up">
           <article class="video-card">
             <div class="video-frame">
