@@ -9,7 +9,7 @@
       content="Anonymous video page for a double-blind review submission."
     >
     <link rel="icon" href="data:,">
-    <link rel="stylesheet" href="styles.css?v=20260620-centered-compact-videos">
+    <link rel="stylesheet" href="styles.css?v=20260621-paper-order-videos">
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -19,8 +19,8 @@
         <h1 id="page-title">UNIQ Demonstrations</h1>
         <p class="summary">
           Anonymous video material for the submitted manuscript. The videos
-          group the method overview, moving-obstacle comparison, planar air-hockey
-          simulation, and curve-tracking simulation.
+          follow the experiment order in the paper, from simulation studies to
+          physical robot demonstrations.
         </p>
       </header>
 
@@ -107,9 +107,31 @@
       <section class="video-section compact-section" aria-labelledby="additional-title">
         <div class="section-heading">
           <p class="kicker">Simulation demonstrations</p>
-          <h2 id="additional-title">Planar Air Hockey and Curve Tracking</h2>
+          <h2 id="additional-title">Curve Tracking and Planar Air Hockey</h2>
         </div>
         <div class="video-grid two-up">
+          <article class="video-card">
+            <div class="video-frame">
+              <button
+                class="video-loader"
+                type="button"
+                data-youtube-id="A2G4y5NsEQQ"
+                data-title="Curve tracking simulation"
+              >
+                <img
+                  src="https://i.ytimg.com/vi/A2G4y5NsEQQ/hqdefault.jpg"
+                  alt="Curve-tracking simulation thumbnail"
+                >
+                <span class="play-button" aria-hidden="true"></span>
+                <span class="sr-only">Play curve-tracking simulation video</span>
+              </button>
+            </div>
+            <div class="video-copy">
+              <h3>Sim Curve Tracking</h3>
+              <p>Mixed equality and inequality simulation.</p>
+            </div>
+          </article>
+
           <article class="video-card">
             <div class="video-frame">
               <button
@@ -131,26 +153,231 @@
               <p>Planar air-hockey simulation.</p>
             </div>
           </article>
+        </div>
+      </section>
+
+      <section class="video-section compact-section" aria-labelledby="tb4-title">
+        <div class="section-heading">
+          <p class="kicker">Physical robot experiment</p>
+          <h2 id="tb4-title">TurtleBot 4 Static-Obstacle Navigation</h2>
+        </div>
+        <div class="video-grid two-up">
+          <article class="video-card">
+            <div class="video-frame">
+              <button
+                class="video-loader"
+                type="button"
+                data-youtube-id="jfg4k9qbEkA"
+                data-title="TurtleBot 4 static-obstacle navigation, ATACOM"
+              >
+                <img
+                  src="https://i.ytimg.com/vi/jfg4k9qbEkA/hqdefault.jpg"
+                  alt="ATACOM TurtleBot 4 static-obstacle navigation thumbnail"
+                >
+                <span class="play-button" aria-hidden="true"></span>
+                <span class="sr-only">Play TurtleBot 4 ATACOM video</span>
+              </button>
+            </div>
+            <div class="video-copy">
+              <h3>TurtleBot 4: ATACOM</h3>
+              <p>Matched static-obstacle rollout with bilateral correction.</p>
+            </div>
+          </article>
 
           <article class="video-card">
             <div class="video-frame">
               <button
                 class="video-loader"
                 type="button"
-                data-youtube-id="A2G4y5NsEQQ"
-                data-title="Curve tracking simulation"
+                data-youtube-id="-5oMqjPTD1I"
+                data-title="TurtleBot 4 static-obstacle navigation, UNIQ"
               >
                 <img
-                  src="https://i.ytimg.com/vi/A2G4y5NsEQQ/hqdefault.jpg"
-                  alt="Curve-tracking simulation thumbnail"
+                  src="https://i.ytimg.com/vi/-5oMqjPTD1I/hqdefault.jpg"
+                  alt="UNIQ TurtleBot 4 static-obstacle navigation thumbnail"
                 >
                 <span class="play-button" aria-hidden="true"></span>
-                <span class="sr-only">Play curve-tracking simulation video</span>
+                <span class="sr-only">Play TurtleBot 4 UNIQ video</span>
               </button>
             </div>
             <div class="video-copy">
-              <h3>Sim Curve Tracking</h3>
-              <p>Curve-tracking simulation.</p>
+              <h3>TurtleBot 4: UNIQ</h3>
+              <p>Matched static-obstacle rollout with one-sided correction.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="video-section compact-section" aria-labelledby="xarm-title">
+        <div class="section-heading">
+          <p class="kicker">Physical robot experiment with trajectory replays</p>
+          <h2 id="xarm-title">xArm7 From-Scratch Reaching</h2>
+        </div>
+        <p class="section-note">
+          The hardware reaching run is the experiment. The simulation videos replay
+          the corresponding hardware trajectories to show the safe region and target
+          point more clearly.
+        </p>
+        <div class="video-grid two-up">
+          <article class="video-card">
+            <div class="video-frame">
+              <button
+                class="video-loader"
+                type="button"
+                data-youtube-id="-jF-rRS1LEU"
+                data-title="xArm7 hardware reaching run 1"
+              >
+                <img
+                  src="https://i.ytimg.com/vi/-jF-rRS1LEU/hqdefault.jpg"
+                  alt="xArm7 hardware reaching run 1 thumbnail"
+                >
+                <span class="play-button" aria-hidden="true"></span>
+                <span class="sr-only">Play xArm7 hardware run 1 video</span>
+              </button>
+            </div>
+            <div class="video-copy">
+              <h3>xArm7 Hardware Run 1</h3>
+              <p>Direct hardware reaching under UNIQ-filtered exploration.</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-frame">
+              <button
+                class="video-loader"
+                type="button"
+                data-youtube-id="12eV4E8Sh5c"
+                data-title="xArm7 trajectory replay run 1"
+              >
+                <img
+                  src="https://i.ytimg.com/vi/12eV4E8Sh5c/hqdefault.jpg"
+                  alt="xArm7 trajectory replay run 1 thumbnail"
+                >
+                <span class="play-button" aria-hidden="true"></span>
+                <span class="sr-only">Play xArm7 replay run 1 video</span>
+              </button>
+            </div>
+            <div class="video-copy">
+              <h3>xArm7 Replay Run 1</h3>
+              <p>Replay of the same hardware trajectory with safe region and target point.</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-frame">
+              <button
+                class="video-loader"
+                type="button"
+                data-youtube-id="vLNV8X5H4t0"
+                data-title="xArm7 hardware reaching run 2"
+              >
+                <img
+                  src="https://i.ytimg.com/vi/vLNV8X5H4t0/hqdefault.jpg"
+                  alt="xArm7 hardware reaching run 2 thumbnail"
+                >
+                <span class="play-button" aria-hidden="true"></span>
+                <span class="sr-only">Play xArm7 hardware run 2 video</span>
+              </button>
+            </div>
+            <div class="video-copy">
+              <h3>xArm7 Hardware Run 2</h3>
+              <p>Direct hardware reaching under UNIQ-filtered exploration.</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-frame">
+              <button
+                class="video-loader"
+                type="button"
+                data-youtube-id="ONJUW3mHtTA"
+                data-title="xArm7 trajectory replay run 2"
+              >
+                <img
+                  src="https://i.ytimg.com/vi/ONJUW3mHtTA/hqdefault.jpg"
+                  alt="xArm7 trajectory replay run 2 thumbnail"
+                >
+                <span class="play-button" aria-hidden="true"></span>
+                <span class="sr-only">Play xArm7 replay run 2 video</span>
+              </button>
+            </div>
+            <div class="video-copy">
+              <h3>xArm7 Replay Run 2</h3>
+              <p>Replay of the same hardware trajectory with safe region and target point.</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-frame">
+              <button
+                class="video-loader"
+                type="button"
+                data-youtube-id="olu_2bnCP5w"
+                data-title="xArm7 hardware reaching run 3"
+              >
+                <img
+                  src="https://i.ytimg.com/vi/olu_2bnCP5w/hqdefault.jpg"
+                  alt="xArm7 hardware reaching run 3 thumbnail"
+                >
+                <span class="play-button" aria-hidden="true"></span>
+                <span class="sr-only">Play xArm7 hardware run 3 video</span>
+              </button>
+            </div>
+            <div class="video-copy">
+              <h3>xArm7 Hardware Run 3</h3>
+              <p>Direct hardware reaching under UNIQ-filtered exploration.</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-frame">
+              <button
+                class="video-loader"
+                type="button"
+                data-youtube-id="xa6ceLWyDzs"
+                data-title="xArm7 trajectory replay run 3"
+              >
+                <img
+                  src="https://i.ytimg.com/vi/xa6ceLWyDzs/hqdefault.jpg"
+                  alt="xArm7 trajectory replay run 3 thumbnail"
+                >
+                <span class="play-button" aria-hidden="true"></span>
+                <span class="sr-only">Play xArm7 replay run 3 video</span>
+              </button>
+            </div>
+            <div class="video-copy">
+              <h3>xArm7 Replay Run 3</h3>
+              <p>Replay of the same hardware trajectory with safe region and target point.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="video-section compact-section" aria-labelledby="g1-title">
+        <div class="section-heading">
+          <p class="kicker">Physical robot experiment</p>
+          <h2 id="g1-title">Unitree G1 Policy Wrapping</h2>
+        </div>
+        <div class="video-grid single-up">
+          <article class="video-card">
+            <div class="video-frame">
+              <button
+                class="video-loader"
+                type="button"
+                data-youtube-id="1PLFa8Pt4zU"
+                data-title="Unitree G1 policy wrapping"
+              >
+                <img
+                  src="https://i.ytimg.com/vi/1PLFa8Pt4zU/hqdefault.jpg"
+                  alt="Unitree G1 policy wrapping thumbnail"
+                >
+                <span class="play-button" aria-hidden="true"></span>
+                <span class="sr-only">Play Unitree G1 policy wrapping video</span>
+              </button>
+            </div>
+            <div class="video-copy">
+              <h3>Unitree G1 Walking</h3>
+              <p>Online lower-body target filtering for a fixed walking policy.</p>
             </div>
           </article>
         </div>
