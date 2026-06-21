@@ -9,7 +9,7 @@
       content="UNIQ method video demonstrations for mixed equality and inequality constraint handling in robot learning."
     >
     <link rel="icon" href="data:,">
-    <link rel="stylesheet" href="styles.css?v=20260621-g1-wide">
+    <link rel="stylesheet" href="styles.css?v=20260621-sac-nominal">
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -140,9 +140,10 @@
           <h2 id="additional-title">Curve Tracking and Planar Air Hockey</h2>
         </div>
         <p class="section-note">
-          Curve tracking uses a curve-trained actor with an equality-tracking
-          constraint and obstacle inequalities. Planar air hockey uses a learned
-          striking actor with joint, velocity, and workspace constraints.
+          Nominal policy: both tasks use task-specific SAC actors trained from
+          scratch. Curve tracking adds an equality-tracking constraint and
+          obstacle inequalities; planar air hockey uses joint, velocity, and
+          workspace constraints.
         </p>
         <div class="video-grid two-up">
           <article class="video-card">
