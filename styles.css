@@ -287,7 +287,7 @@ h1 {
 }
 
 .single-up {
-  grid-template-columns: minmax(0, 390px);
+  grid-template-columns: minmax(0, calc(390px * 2 + 14px));
 }
 
 .compact-section .video-frame {
