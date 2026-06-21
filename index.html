@@ -3,26 +3,51 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UNIQ Demonstrations</title>
+    <title>UNIQ Method Demonstrations</title>
     <meta
       name="description"
-      content="Anonymous video page for a double-blind review submission."
+      content="UNIQ method video demonstrations for mixed equality and inequality constraint handling in robot learning."
     >
     <link rel="icon" href="data:,">
-    <link rel="stylesheet" href="styles.css?v=20260621-paper-order-videos">
+    <link rel="stylesheet" href="styles.css?v=20260621-method-site">
     <script src="script.js" defer></script>
   </head>
   <body>
     <main class="page-shell">
       <header class="site-header" aria-labelledby="page-title">
-        <p class="eyebrow">Double-blind review artifact</p>
-        <h1 id="page-title">UNIQ Demonstrations</h1>
+        <p class="eyebrow">Robot-learning safety filter</p>
+        <h1 id="page-title">UNIQ: Type-Aware Input Correction</h1>
         <p class="summary">
-          Anonymous video material for the submitted manuscript. The videos
-          follow the experiment order in the paper, from simulation studies to
-          physical robot demonstrations.
+          UNIQ filters nominal robot-learning inputs under mixed equality and
+          inequality constraints. Equalities keep bilateral correction, while
+          inequality rows use one-sided correction so safe-side motion is not
+          pulled back toward a boundary.
         </p>
       </header>
+
+      <section class="method-strip" aria-label="Method focus">
+        <div class="method-point">
+          <p class="point-label">Constraint semantics</p>
+          <p>
+            Equality targets and inequality safe regions enter the correction
+            layer with different row types.
+          </p>
+        </div>
+        <div class="method-point">
+          <p class="point-label">Online correction</p>
+          <p>
+            The layer modifies the nominal controller or learned policy output
+            before execution.
+          </p>
+        </div>
+        <div class="method-point">
+          <p class="point-label">Evaluation scope</p>
+          <p>
+            The videos cover simulation comparisons and bounded physical robot
+            demonstrations.
+          </p>
+        </div>
+      </section>
 
       <section class="featured-video" aria-labelledby="supplementary-title">
         <div class="section-heading">
@@ -47,7 +72,7 @@
           </div>
           <div class="video-copy">
             <h3>Overview</h3>
-            <p>Main overview across the demonstration settings.</p>
+            <p>Method overview across simulation and physical settings.</p>
           </div>
         </article>
       </section>
@@ -55,7 +80,7 @@
       <section class="video-section compact-section" aria-labelledby="moving-obstacle-title">
         <div class="section-heading">
           <p class="kicker">Simulation comparison</p>
-          <h2 id="moving-obstacle-title">Moving Obstacle Simulation</h2>
+          <h2 id="moving-obstacle-title">Moving-Obstacle Navigation</h2>
         </div>
         <div class="video-grid two-up">
           <article class="video-card">
@@ -76,7 +101,7 @@
             </div>
             <div class="video-copy">
               <h3>Sim Moving Obstacle: ATACOM</h3>
-              <p>ATACOM baseline behavior in the moving-obstacle simulation.</p>
+              <p>Bilateral correction in the moving-obstacle navigation setting.</p>
             </div>
           </article>
 
@@ -98,7 +123,7 @@
             </div>
             <div class="video-copy">
               <h3>Sim Moving Obstacle: UNIQ</h3>
-              <p>UNIQ behavior in the same simulation setting for comparison.</p>
+              <p>One-sided correction in the same navigation setting.</p>
             </div>
           </article>
         </div>
@@ -128,7 +153,7 @@
             </div>
             <div class="video-copy">
               <h3>Sim Curve Tracking</h3>
-              <p>Mixed equality and inequality simulation.</p>
+              <p>Curve tracking with equality error and obstacle-avoidance inequalities.</p>
             </div>
           </article>
 
@@ -150,7 +175,7 @@
             </div>
             <div class="video-copy">
               <h3>Planar Air Hockey</h3>
-              <p>Planar air-hockey simulation.</p>
+              <p>Fast striking with joint, velocity, and workspace constraints.</p>
             </div>
           </article>
         </div>
@@ -180,7 +205,7 @@
             </div>
             <div class="video-copy">
               <h3>TurtleBot 4: ATACOM</h3>
-              <p>Matched static-obstacle rollout with bilateral correction.</p>
+              <p>Matched static-obstacle rollout showing bilateral correction behavior.</p>
             </div>
           </article>
 
@@ -202,7 +227,7 @@
             </div>
             <div class="video-copy">
               <h3>TurtleBot 4: UNIQ</h3>
-              <p>Matched static-obstacle rollout with one-sided correction.</p>
+              <p>Matched static-obstacle rollout showing one-sided correction behavior.</p>
             </div>
           </article>
         </div>
@@ -214,9 +239,9 @@
           <h2 id="xarm-title">xArm7 From-Scratch Reaching</h2>
         </div>
         <p class="section-note">
-          The hardware reaching run is the experiment. The simulation videos replay
-          the corresponding hardware trajectories to show the safe region and target
-          point more clearly.
+          Each pair shows a direct hardware reaching run and a simulation replay
+          of the same recorded trajectory. The replay visualizes the safe region
+          and target point; the hardware run is the physical experiment.
         </p>
         <div class="video-grid two-up">
           <article class="video-card">
@@ -259,7 +284,7 @@
             </div>
             <div class="video-copy">
               <h3>xArm7 Replay Run 1</h3>
-              <p>Replay of the same hardware trajectory with safe region and target point.</p>
+              <p>Recorded hardware trajectory replay with safe region and target point.</p>
             </div>
           </article>
 
@@ -303,7 +328,7 @@
             </div>
             <div class="video-copy">
               <h3>xArm7 Replay Run 2</h3>
-              <p>Replay of the same hardware trajectory with safe region and target point.</p>
+              <p>Recorded hardware trajectory replay with safe region and target point.</p>
             </div>
           </article>
 
@@ -347,7 +372,7 @@
             </div>
             <div class="video-copy">
               <h3>xArm7 Replay Run 3</h3>
-              <p>Replay of the same hardware trajectory with safe region and target point.</p>
+              <p>Recorded hardware trajectory replay with safe region and target point.</p>
             </div>
           </article>
         </div>
@@ -377,7 +402,7 @@
             </div>
             <div class="video-copy">
               <h3>Unitree G1 Walking</h3>
-              <p>Online lower-body target filtering for a fixed walking policy.</p>
+              <p>Online lower-body target filtering for one fixed walking policy.</p>
             </div>
           </article>
         </div>

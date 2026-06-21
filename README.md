@@ -1,5 +1,5 @@
-# UNIQ Demonstrations
+# UNIQ Method Demonstrations
 
-Anonymous video page for double-blind review.
+Static GitHub Pages site for UNIQ method video demonstrations.
 
-The site is static and intended for GitHub Pages.
+The page omits author, affiliation, and personal repository metadata.

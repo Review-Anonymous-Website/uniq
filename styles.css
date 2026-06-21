@@ -78,6 +78,31 @@ h1 {
   color: var(--muted);
 }
 
+.method-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 0 0 30px;
+}
+
+.method-point {
+  padding-top: 12px;
+  border-top: 2px solid var(--accent);
+}
+
+.point-label {
+  margin: 0 0 5px;
+  font-size: 0.78rem;
+  font-weight: 750;
+  color: var(--text);
+}
+
+.method-point p:last-child {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
 .featured-video,
 .video-section {
   margin-top: 26px;
@@ -282,6 +307,11 @@ h1 {
   .site-header {
     display: block;
     padding-bottom: 18px;
+  }
+
+  .method-strip {
+    grid-template-columns: 1fr;
+    gap: 14px;
   }
 
   .section-heading {
